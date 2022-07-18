@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter:wght@700&family=Lobster&family=M+PLUS+2&family=Montserrat&family=Nunito&family=Oswald:wght@500;700&family=Poppins:wght@400;500&family=Praise&family=Satisfy&family=Shippori+Antique&family=Source+Sans+Pro:wght@700&family=Ubuntu&display=swap');
+
+body {
+    background: #F3F1FF;
+}
+
+.top-section {
+    width: 870px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.top-players-title {
+    color: rgba(86, 46, 255, 1);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 33px 0px 33px 25px;
+
+}
+
+.top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 56px;
+    grid-row-gap: 29px;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player>img {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+.player h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top-blogs-title,
+.top-Course-title {
+    color: rgba(86, 46, 255, 1);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 33px 0px 33px 20px;
+}
+
+.top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    padding: 0 10px;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnil {
+    width: 177px;
+    height: 117px;
+    margin-right: 10px;
+}
+
+span {
+    color: rgba(86, 46, 255, 1);
+}
+
+small {
+    color: rgba(159, 159, 159, 1);
+}
+
+.abc {
+    width: 870px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 90px;
+    padding: 60px 20px;
+}
+
+.latest-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+}
+
+.latest-course {
+    text-align: center;
+    width: 100%;
+}
+
+.latest-course-thumbnil {
+    width: 224px;
+    height: 104px;
+}
+
+.author {
+    color: rgba(237, 107, 79, 1);
+}
+
+.filled {
+    color: goldenrod;
+}
+
+.empty {
+    color: lightslategrey;
+}
+
+.rating {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.time {
+    background-color: rgb(231, 154, 134);
+    color: wheat;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+
+.rating-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* media query */
+@media screen and (max-width:480px) {
+    .top-section {
+        width: 870;
+        margin: 0 auto;
+    }
+
+    .top-players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-players-title {
+        text-align: center;
+    }
+
+    .top-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-blogs-title {
+        text-align: center;
+    }
+
+    .latest-courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rating-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-Course-title {
+        text-align: center;
+    }
+
+    .time {
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
